@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Web Services 1</string>
+    <string name="enter_a_id_between_1_to_10_to_get_details">Enter a Id between 1 to 10 to get Details</string>
+    <string name="get_data">Get Data</string>
+    <string name="id_n_a">ID: N/A</string>
+    <string name="title_n_a">TITLE: N/A</string>
+    <string name="body_n_a">BODY: N/A</string>
+</resources>

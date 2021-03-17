@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="@dimen/heading_tv_width"
+        android:layout_height="@dimen/heading_tv_height"
+        android:gravity="center"
+        android:text="@string/enter_a_id_between_1_to_10_to_get_details"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/dataIdEt"
+        android:layout_width="@dimen/dataId_et_width"
+        android:layout_height="@dimen/dataId_et_height"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Button
+        android:id="@+id/getDataButton"
+        android:layout_width="@dimen/getData_btn_width"
+        android:layout_height="@dimen/getData_btn_height"
+        android:text="@string/get_data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataIdEt"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/cardView_width"
+        android:elevation="@dimen/cardView_elevation"
+        android:layout_height="@dimen/cardView_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getDataButton"
+        app:layout_constraintVertical_bias="0.532"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_tv"
+                android:layout_width="@dimen/id_tv_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:hint="@string/id_n_a" />
+
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="@dimen/title_tv_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:hint="@string/title_n_a" />
+
+            <TextView
+                android:id="@+id/body_tv"
+                android:layout_width="@dimen/body_tv_width"
+                android:layout_height="@dimen/body_tv_height"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/body_n_a"
+                android:gravity="center_vertical"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

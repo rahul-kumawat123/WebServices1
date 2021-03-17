@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heading_tv_width">363dp</dimen>
+    <dimen name="heading_tv_height">95dp</dimen>
+    <dimen name="dataId_et_width">244dp</dimen>
+    <dimen name="dataId_et_height">45dp</dimen>
+    <dimen name="getData_btn_width">185dp</dimen>
+    <dimen name="getData_btn_height">50dp</dimen>
+    <dimen name="cardView_width">335dp</dimen>
+    <dimen name="cardView_elevation">30dp</dimen>
+    <dimen name="cardView_height">308dp</dimen>
+    <dimen name="id_tv_width">300dp</dimen>
+    <dimen name="title_tv_width">300dp</dimen>
+    <dimen name="body_tv_width">300dp</dimen>
+    <dimen name="body_tv_height">118dp</dimen>
+</resources>
